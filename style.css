@@ -1,0 +1,155 @@
+body {
+    background-image:url(bg.jpeg);
+    color: white;
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.container{
+    position: absolute;
+    display:grid;
+    place-content:center;
+    height: 100%;
+    width: 100%;
+}
+.box{
+    box-shadow: 0px 0px 30px(227, 228, 236, 0.37);
+    backdrop-filter: blur(30px);
+    background:rgba(255, 255, 255, 0.1) ;
+    padding: 10px  20px 20px 10px;
+    align-items: center;
+    text-align:center;
+    width:85%;
+    border-radius: 16px;
+   position: fixed; 
+   margin: 70px 10px 50px;
+   
+}
+.search{
+    display:flex;
+}
+.search input{
+    padding:8px;
+    border-radius: 10px;
+    border:1px solid whitesmoke;
+    outline:none;
+    background: none;
+    width:90%;
+    color:white;
+    font-weight:500;
+ }
+
+.search button{
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    border:none;
+    outline:none;
+    border-radius: 16px;
+    background: transparent;
+    color: white;
+    right:55px;
+    
+}
+::placeholder{
+    color: whitesmoke;
+    font-weight:500 ;
+}
+.temperature{
+    padding: 10px;
+    position: relative;
+    display:grid;
+    text-align:center;
+    align-items:center;
+    height: 300px;
+}
+.temperature h3{
+    position: absolute;
+   right:0;
+   left: 0;
+   top: 65%;
+   font-size:24px ;
+} 
+.temperature span{
+    position: absolute;
+    top:80%;
+    left:0;
+    right:0;
+}
+.temperature h4{
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    font-size: 30px;
+    font-weight:900;
+}
+.temperature img{
+    height: 200px;
+    width: 250px;
+
+}
+.type{
+    display:flex;
+    justify-content: space-around;
+    
+}
+.humidity{
+    display: flex;
+    width: 45%;
+    text-align:left;
+    height: 60px;
+}
+.humidity-icon{
+    display:grid;
+    width: 30%;
+    align-items:center;  
+    text-align:center;  
+    font-size:30px;
+}
+.humidity-decs{
+    position: relative;
+    display:grid;
+}
+.humidity-decs p{
+    position: absolute;
+    top:-15px;
+    font-size:24px;
+    font-weight:700;
+}
+.humidity-decs span{
+    position: absolute;
+    top:30px;
+    font-size: 12px;
+}
+.wind{
+    display:flex;
+    width:50%;
+    text-align:left;
+    height: 60px;
+    text-wrap:nowrap;
+}
+.wind-icon{
+    display:grid;
+    width: 30%;
+    align-items:center;
+    text-align:center;
+    font-size:30px;
+}
+
+.wind-decs{
+    position: relative;
+}
+.wind-decs p{
+    font-size:24px;
+    font-weight:700;
+    position: absolute;
+    top:-15px;
+}
+.wind-decs span{
+    position: absolute;
+    top:30px;
+    font-size:12px;
+}

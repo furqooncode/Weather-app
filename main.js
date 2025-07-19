@@ -55,4 +55,4 @@ setInterval(() => {
   back.style.backgroundImage = background [index];
   index = [index + 1 ] % background.length;
   back.style.transition = '3s ease out-in-out';
-},3000);
+},5000);

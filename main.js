@@ -44,11 +44,6 @@ city.value = "";
 function show(param) {
   real();
 }
-city.addEventListener('input', function (param) {
-  setTimeout(() => {
-  real()
-},7000)
-})
 
 
 const background = [ 

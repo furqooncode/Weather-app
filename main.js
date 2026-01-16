@@ -6,7 +6,7 @@ const city = document.getElementById('city');
 const county = document.getElementById('country');
 const image = document.getElementById('image');
 const back = document.getElementById('back')
-function show(){
+function real(){
   let cityName = city.value.trim();
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=fd8c52c76d9e343660e6bdb0de96aa24&units=metric`)
 .then(res => res.json())
@@ -40,6 +40,15 @@ if (data.weather[0].main == "Clouds") {
 })
 city.value = "";
 }
+
+function show(param) {
+  real();
+}
+city.addEventListener('input', function (param) {
+  setTimeout(() => {
+  real()
+},7000)
+})
 
 
 const background = [ 
